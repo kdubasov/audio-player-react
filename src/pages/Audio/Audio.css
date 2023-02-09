@@ -1,0 +1,81 @@
+.Audio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Audio .content{
+    width: 45%;
+}
+
+.Audio .content h3.title{
+    margin-bottom: 1em;
+}
+
+/*player block*/
+.Audio .player{
+    width: 100%;
+    height: auto;
+    margin: 0 0 1.5em;
+    padding: 2em;
+    background: var(--pr-player);
+}
+
+.Audio .player input.song-time{
+    margin-top: 2.5em;
+}
+.Audio .player input.song-time::-webkit-slider-thumb {
+    background: var(--bs-white);
+    width: 16px;
+    height: 12px;
+    margin-top: -5px;
+}
+.Audio .player input.song-time::-webkit-slider-runnable-track {
+    height: 2px;
+    background: #ADACAD;
+}
+
+/*footer*/
+.Audio .player footer{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Audio .player footer h6{
+    margin: 0;
+}
+.Audio .player footer input[type="range"]{
+    width: 40%;
+}
+.Audio .player footer input[type="range"]::-webkit-slider-thumb {
+    background: var(--bs-dark);
+    border-radius: 0;
+    width: 20px;
+    height: 14px;
+    margin-top: -6px;
+}
+.Audio .player footer input[type="range"]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: var(--bs-white);
+}
+
+/*back button*/
+.Audio button.back{
+    font-weight: 500;
+    color: var(--pr-dark);
+    background: none;
+    border: none;
+    transition: .15s;
+    display: flex;
+    align-items: center;
+}
+.Audio button.back img{
+    width: 20px;
+    margin-right: .5em;
+}
+.Audio button.back:hover{
+    opacity: .75;
+}

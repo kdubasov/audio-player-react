@@ -1,0 +1,63 @@
+.MainPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*title*/
+.MainPage h1{
+    margin-bottom: .25em;
+    font-size: 3em;
+    color: var(--pr-dark);
+    font-weight: 400;
+}
+
+.MainPage .content{
+    width: 50%;
+}
+
+/*form*/
+.MainPage .form-link{
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+}
+.MainPage .form-link input{
+    width: 100%;
+    padding: 1em;
+    font-size: 1.35em;
+    border: none;
+    outline: none;
+    background: var(--bs-white);
+    transition: .25s;
+}
+.MainPage .form-link input::placeholder{
+    opacity: .65;
+}
+
+/*button*/
+.MainPage .form-link button{
+    background: var(--pr-yellow);
+    border: none;
+    padding: 1em;
+    transition: .15s;
+}
+.MainPage .form-link button:hover{
+    padding: 0 1.5em;
+}
+
+
+/*alert*/
+.MainPage .alert{
+    min-width: 300px;
+    margin: 0;
+
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-weight: 600;
+    text-align: center;
+}

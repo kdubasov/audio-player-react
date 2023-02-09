@@ -1,0 +1,17 @@
+@media (max-width: 1000px) {
+    .MainPage h1{
+        font-size: 2em;
+    }
+    .MainPage .content{
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .MainPage h1{
+        font-size: 1.5em;
+    }
+    .MainPage .content{
+        width: 95%;
+    }
+}
